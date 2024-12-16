@@ -47,6 +47,18 @@ body {
   padding: 50px 0;
 }
 
+/* Đặt menu nằm bên phải trên máy tính */
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Menu nằm bên phải */
+}
+
+/* Khi trên màn hình nhỏ (điện thoại), menu nằm bên trái */
+@media (max-width: 991px) { /* Bootstrap breakpoint cho màn hình nhỏ */
+  .menu {
+    justify-content: flex-start; /* Menu nằm bên trái */
+  }
+}
 
 section {
   margin-top: 50px;
@@ -758,6 +770,7 @@ a:hover {
   font-size: 1.3rem;
   color: #fff;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 #footer .footer-description {
